@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job Application</title>
+    {{ form.media }}
+  </head>
+  <body>
+    <p>
+      <b>JOB APPLICATION</b>
+    </p>
+    <form id="job-application-form" method="post" action=".">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" value="continue">Continue</button>
+    </form>
+  </body>
+</html>
